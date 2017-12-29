@@ -6,10 +6,18 @@ GEM
       execjs
     coffee-script-source (1.9.1.1)
     execjs (2.5.2)
+    faraday (0.13.1)
+      multipart-post (>= 1.2, < 3)
+    forecast_io (2.0.1)
+      faraday
+      hashie
+      multi_json
     foreman (0.78.0)
       thor (~> 0.19.1)
-    haml (4.0.6)
-      tilt
+    geocoder (1.4.5)
+    hashie (3.5.7)
+    multi_json (1.12.2)
+    multipart-post (2.0.0)
     rack (1.6.1)
     rack-protection (1.5.3)
       rack
@@ -26,10 +34,11 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-script
+  forecast_io
   foreman
-  haml
+  geocoder
   sass
   sinatra
 
 BUNDLED WITH
-   1.10.3
+   1.16.0

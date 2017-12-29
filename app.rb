@@ -1,11 +1,16 @@
 require 'bundler/setup'
 require 'sinatra'
 
-require 'haml'
 require 'sass'
 require 'coffee-script'
+require './forecast.rb'
 
 get '/' do
-  @mes = 'Hello!'
-  haml :index
+  @weather = "What is it like outside?"
+  erb :index
+end
+
+post '/' do
+  @weather = current_weather(params[:location])
+  erb :index
 end
