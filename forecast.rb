@@ -1,7 +1,7 @@
 require 'forecast_io'
 require 'geocoder'
 
-ForecastIO.api_key = '9f9af152a82e8a7a10d42d4e1348b724' #
+ForecastIO.api_key = '39415db8a600c8d612377605e409f5ef' #
 
 
 

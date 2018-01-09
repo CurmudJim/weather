@@ -1,0 +1,11 @@
+body {
+  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/cloudy-day.png);
+}
+
+main {
+  margin-top: 8rem;
+}
+
+main.jumbotron {
+  padding: 0;
+}
